@@ -176,8 +176,34 @@ a {
 .b-header__phones {
   width: 480px;
 }
+.heading--xl {
+  text-align: center;
+  font-size: 26px;
+}
+.heading--xl:after {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 7px;
+  margin: 10px auto 0;
+  background: url("../img/heading-pattern.png") no-repeat;
+}
+.heading--lg {
+  font-size: 24px;
+}
+.heading--md {
+  font-size: 22px;
+}
+.heading--sm {
+  font-size: 20px;
+}
+.heading--xs {
+  font-size: 18px;
+}
 .b-content {
   background: #fff;
+  margin-top: -20px;
+  padding-top: 40px;
 }
 .b-footer {
   height: 181px;
@@ -227,6 +253,12 @@ a {
 .b-main {
   min-height: 200px;
   background: url("../img/b-main-bg.jpg") repeat-y;
+  margin-top: -20px;
+  -webkit-box-shadow: 0 10px 12px #e1e1e1;
+  box-shadow: 0 10px 12px #e1e1e1;
+}
+.b-sidebar {
+  padding-top: 20px;
 }
 .b-top-menu {
   height: 50px;
