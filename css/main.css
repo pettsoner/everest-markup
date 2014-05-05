@@ -179,6 +179,7 @@ a {
 .heading--xl {
   text-align: center;
   font-size: 26px;
+  margin-bottom: 20px;
 }
 .heading--xl:after {
   content: '';
@@ -211,7 +212,11 @@ a {
 }
 .b-header {
   background: url("../img/b-header-bg.jpg") no-repeat center center;
-  min-height: 480px;
+  padding-bottom: 60px;
+/* Верхняя часть
+    --------------------------------------------- */
+/* Основная часть
+    --------------------------------------------- */
 }
 .b-header__top {
   min-height: 76px;
@@ -249,6 +254,20 @@ a {
   position: absolute;
   left: -11px;
   top: 0;
+}
+.b-header__main {
+  padding: 15px 0 0;
+}
+.b-header__logo,
+.b-header__clock {
+  width: 180px;
+}
+.b-header__logo {
+  float: left;
+}
+.b-header__clock {
+  float: right;
+  text-align: center;
 }
 .b-main {
   min-height: 200px;
