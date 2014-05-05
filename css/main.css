@@ -1,0 +1,259 @@
+/* Настройки
+----------------------------------------------------------- */
+/* Подключение файлов
+----------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font: 100%/1.2 'PT Sans', sans-serif;
+}
+body {
+  min-width: 980px;
+  background: url("../img/body-bg.jpg") repeat;
+}
+p {
+  font: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.link,
+.link--dotted,
+.link--solid {
+  display: inline-block;
+  color: #fff;
+}
+.link:hover,
+.link--dotted:hover,
+.link--solid:hover {
+  border: none;
+}
+.link--dotted {
+  border-bottom: dotted 1px #fff;
+}
+.link--solid {
+  border-bottom: solid 1px #fff;
+}
+.row {
+  zoom: 1;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.col,
+.col-1-4,
+.col-2-4,
+.b-content,
+.b-header__social,
+.b-header__profile,
+.b-header__phones,
+.b-sidebar {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+}
+.col-1-4,
+.b-header__social,
+.b-header__profile,
+.b-sidebar {
+  width: 245px;
+}
+.col-2-4,
+.b-content,
+.b-header__phones {
+  width: 480px;
+}
+.b-content {
+  background: #fff;
+}
+.b-footer {
+  height: 181px;
+  background: url("../img/b-footer-bg.jpg") repeat-x;
+}
+.b-header {
+  background: url("../img/b-header-bg.jpg") no-repeat center center;
+  min-height: 480px;
+}
+.b-header__top {
+  min-height: 76px;
+  background: url("../img/b-header__top-bg.png") repeat-x;
+  color: #fff;
+  font-size: 14px;
+}
+.b-header__social,
+.b-header__profile,
+.b-header__phones {
+  vertical-align: middle;
+  padding: 12px 20px;
+}
+.b-header__phones {
+  text-align: center;
+  font-weight: bold;
+}
+.b-header__phones span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.b-header__phones b {
+  font-size: 24px;
+}
+.b-header__profile {
+  text-align: right;
+}
+.b-header__profile__link {
+  position: relative;
+  margin: 0 8px;
+}
+.b-header__profile__link + .b-header__profile__link:before {
+  content: '|';
+  color: #61b0ce;
+  position: absolute;
+  left: -11px;
+  top: 0;
+}
+.b-main {
+  min-height: 200px;
+  background: url("../img/b-main-bg.jpg") repeat-y;
+}
+.b-top-menu {
+  height: 50px;
+  padding: 3px 10px 0;
+  background: url("../img/b-top-menu-bg.png") repeat-x;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.b-top-menu__item {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #164e66;
+}
+.b-top-menu__item + .b-top-menu__item {
+  margin-left: 5px;
+}
+.b-top-menu__item a {
+  display: block;
+  padding: 13px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.b-top-menu__item a:hover {
+  background: -webkit-linear-gradient(top, #96cbe2, #c0e1ef);
+  background: -moz-linear-gradient(top, #96cbe2, #c0e1ef);
+  background: -o-linear-gradient(top, #96cbe2, #c0e1ef);
+  background: -ms-linear-gradient(top, #96cbe2, #c0e1ef);
+  background: linear-gradient(to bottom, #96cbe2, #c0e1ef);
+}
