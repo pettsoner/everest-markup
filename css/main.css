@@ -111,6 +111,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+p {
+  font: inherit;
+}
 input,
 button {
   font-family: inherit;
@@ -212,19 +215,19 @@ button {
   text-align: center;
 }
 .btn--lg {
-  min-width: 170px;
+  width: 170px;
   padding: 11px 20px;
 }
 .btn--md {
-  min-width: 135px;
+  width: 135px;
   padding: 6px 20px;
 }
 .btn--sm {
-  min-width: 105px;
+  width: 105px;
   padding: 5px 20px;
 }
 .btn--light {
-  margin: 10px auto;
+  margin: 10px 0;
   background: -webkit-linear-gradient(top, #6dd2f3, #36a7dc);
   background: -moz-linear-gradient(top, #6dd2f3, #36a7dc);
   background: -o-linear-gradient(top, #6dd2f3, #36a7dc);
@@ -280,6 +283,44 @@ button {
 .b-footer {
   height: 181px;
   background: url("../img/b-footer-bg.jpg") repeat-x;
+  color: #164e66;
+  font-size: 12px;
+}
+.b-footer__col {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 40px 10px 0;
+  width: 242px;
+  height: 120px;
+}
+.b-footer__logo {
+  padding-top: 20px;
+  padding-left: 25px;
+}
+.b-footer__heading {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.b-footer__text {
+  color: #4283a4;
+  line-height: 1.9;
+}
+.b-footer__btn {
+  margin: 20px 0;
+}
+.b-footer__menu {
+  float: left;
+  width: 105px;
+  line-height: 1.7;
+  color: #4283a4;
+}
+.b-footer__menu + .b-footer__menu {
+  margin-left: 10px;
+}
+.b-footer__menu__item a:hover {
+  color: #006fa7;
+  text-decoration: underline;
 }
 .b-header {
   background: url("../img/b-header-bg.jpg") no-repeat center center;
@@ -356,8 +397,8 @@ button {
   background: #fff;
   font-size: 14px;
   color: #333;
-  -webkit-box-shadow: 0 0 4px #cddce2;
-  box-shadow: 0 0 4px #cddce2;
+  -webkit-box-shadow: 0 0 4px #cccdd4;
+  box-shadow: 0 0 4px #cccdd4;
   border: 1px solid #ddedf5;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -446,6 +487,10 @@ a.b-list__item:hover {
   margin: 0 0 5px;
   background: url("../img/b-sidebar__section-bg.png");
   color: #fff;
+}
+.b-sidebar__section__btn {
+  margin-right: auto;
+  margin-left: auto;
 }
 .b-top-menu {
   height: 50px;
