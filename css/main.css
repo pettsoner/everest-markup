@@ -181,6 +181,10 @@ button {
   font-size: 26px;
   margin-bottom: 20px;
 }
+.heading--xl small {
+  font-size: 20px;
+  color: #666;
+}
 .heading--xl:after {
   content: '';
   display: block;
@@ -220,15 +224,15 @@ button {
 }
 .btn--lg {
   width: 190px;
-  padding: 11px 20px;
+  padding: 11px 0;
 }
 .btn--md {
   width: 135px;
-  padding: 6px 20px;
+  padding: 6px 0;
 }
 .btn--sm {
   width: 105px;
-  padding: 5px 20px;
+  padding: 5px 0;
 }
 .btn--light {
   margin: 10px 0;
@@ -307,10 +311,12 @@ button {
 .b-content {
   float: left;
   width: 480px;
-  padding: 20px 10px 0;
-  background: #fff;
   margin-top: -20px;
-  padding-top: 40px;
+  padding: 40px 10px 0;
+  background: #fff;
+}
+.b-content--wide {
+  width: 730px;
 }
 .b-exchange {
   background: #ebebeb;
@@ -418,6 +424,30 @@ button {
 }
 .b-footer__menu + .b-footer__menu {
   margin-left: 15px;
+}
+.b-gallery {
+  zoom: 1;
+  margin: 0 0 30px;
+}
+.b-gallery:before,
+.b-gallery:after {
+  content: "";
+  display: table;
+}
+.b-gallery:after {
+  clear: both;
+}
+.b-gallery__items {
+  width: 655px;
+  margin: 0 auto;
+}
+.b-gallery__item {
+  display: block;
+  float: left;
+  behavior: url("pie/PIE.htc");
+}
+.b-gallery__item + .b-gallery__item {
+  margin-left: 10px;
 }
 .b-header {
   background: url("../img/b-header-bg.jpg") no-repeat center center;
