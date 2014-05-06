@@ -281,17 +281,15 @@ button {
   padding-top: 40px;
 }
 .b-footer {
-  height: 181px;
+  height: 180px;
   background: url("../img/b-footer-bg.jpg") repeat-x;
   color: #164e66;
   font-size: 12px;
 }
 .b-footer__col {
-  display: inline-block;
-  vertical-align: bottom;
-  padding: 40px 10px 0;
-  width: 242px;
-  height: 120px;
+  float: left;
+  width: 245px;
+  padding: 35px 10px 0;
 }
 .b-footer__logo {
   padding-top: 20px;
@@ -304,10 +302,19 @@ button {
 }
 .b-footer__text {
   color: #4283a4;
-  line-height: 1.9;
+  line-height: 1.6;
 }
 .b-footer__btn {
   margin: 20px 0;
+}
+.b-footer__copyright {
+  margin: 30px 0 0;
+  color: #568298;
+  font-size: 14px;
+  font-weight: bold;
+}
+.b-footer__social {
+  margin: 5px 0 0;
 }
 .b-footer__menu {
   float: left;
@@ -316,7 +323,7 @@ button {
   color: #4283a4;
 }
 .b-footer__menu + .b-footer__menu {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .b-footer__menu__item a:hover {
   color: #006fa7;
@@ -491,6 +498,44 @@ a.b-list__item:hover {
 .b-sidebar__section__btn {
   margin-right: auto;
   margin-left: auto;
+}
+.b-social__icon,
+.b-social__vkontakte,
+.b-social__facebook,
+.b-social__twitter,
+.b-social__google {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+  background: url("../img/b-social-sprite.png") no-repeat;
+  width: 18px;
+  height: 18px;
+  -webkit-box-shadow: 1px 2px 2px #909698;
+  box-shadow: 1px 2px 2px #909698;
+}
+.b-social__vkontakte {
+  background-position: 0 0;
+}
+.b-social__vkontakte:hover {
+  background-position: 0 -25px;
+}
+.b-social__facebook {
+  background-position: -29px 0;
+}
+.b-social__facebook:hover {
+  background-position: -29px -25px;
+}
+.b-social__twitter {
+  background-position: -58px 0;
+}
+.b-social__twitter:hover {
+  background-position: -58px -25px;
+}
+.b-social__google {
+  background-position: -87px 0;
+}
+.b-social__google:hover {
+  background-position: -87px -25px;
 }
 .b-top-menu {
   height: 50px;
