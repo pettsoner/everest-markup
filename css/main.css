@@ -305,17 +305,26 @@ a {
 .b-services-menu__item + .b-services-menu__item {
   margin-top: 20px;
 }
+.b-services-menu__item.active .b-services-menu__sub {
+  display: block;
+}
+.b-services-menu__sub {
+  display: none;
+}
 .b-services-menu__link {
   display: block;
   position: relative;
   width: 230px;
   height: 100px;
+  margin: 0 0 12px;
   font-weight: bold;
   color: #006fa7;
+  text-align: center;
+  -webkit-box-shadow: 0 0 8px #98b6c5;
+  box-shadow: 0 0 8px #98b6c5;
   border: 1px solid #fff;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  text-align: center;
 }
 .b-services-menu__link:before {
   content: '';
