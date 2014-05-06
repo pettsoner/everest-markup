@@ -192,6 +192,11 @@ a {
 .heading--xs {
   font-size: 18px;
 }
+.heading--xxs {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .b-content {
   float: left;
   width: 480px;
@@ -289,8 +294,8 @@ a {
   padding: 7px 10px;
   background: #fff;
   color: #333;
-  -webkit-box-shadow: 0 0 5px #c1cfd5;
-  box-shadow: 0 0 5px #c1cfd5;
+  -webkit-box-shadow: 0 0 4px #cddce2;
+  box-shadow: 0 0 4px #cddce2;
   border: 1px solid #ddedf5;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -355,6 +360,18 @@ a {
   float: left;
   width: 250px;
   padding: 20px 10px 0;
+}
+.b-sidebar__section {
+  width: 230px;
+  margin: 0 auto 20px;
+}
+.b-sidebar__section__heading {
+  display: block;
+  height: 49px;
+  padding: 10px 38px;
+  margin: 0 0 5px;
+  background: url("../img/b-sidebar__section-bg.png");
+  color: #fff;
 }
 .b-top-menu {
   height: 50px;
