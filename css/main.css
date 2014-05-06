@@ -312,6 +312,69 @@ button {
   margin-top: -20px;
   padding-top: 40px;
 }
+.b-exchange {
+  background: #ebebeb;
+  padding-bottom: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px #bebebe;
+  box-shadow: inset 0 0 5px #bebebe;
+}
+.b-exchange__heading {
+  height: 50px;
+  padding: 10px 0;
+  margin: 0 0 10px;
+  background: url("../img/b-exchange__heading-bg.jpg") no-repeat;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 4px #9d9d9d;
+  box-shadow: 0 1px 4px #9d9d9d;
+}
+.b-exchange__item {
+  margin: 0 1px;
+  padding: 4px 12px;
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 4px #e3e3e3;
+  box-shadow: 0 0 4px #e3e3e3;
+}
+.b-exchange__currency,
+.b-exchange__flag,
+.b-exchange__rate {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  color: #333;
+}
+.b-exchange__currency {
+  width: 45px;
+  font-size: 14px;
+}
+.b-exchange__rate {
+  font-weight: bold;
+}
+.b-flag,
+.b-flag--ru,
+.b-flag--eu,
+.b-flag--us {
+  display: inline-block;
+  background: url("../img/flags-sprite.png") no-repeat;
+  width: 16px;
+  height: 11px;
+}
+.b-flag--ru {
+  background-position: 0 -60px;
+}
+.b-flag--eu {
+  background-position: 0 -30px;
+}
+.b-flag--us {
+  background-position: 0 0;
+}
 .b-footer {
   height: 180px;
   background: url("../img/b-footer-bg.jpg") repeat-x;
@@ -540,6 +603,7 @@ a.b-list__item:hover {
   -webkit-box-shadow: 0 0 7px #bfcace;
   box-shadow: 0 0 7px #bfcace;
   position: relative;
+  behavior: url("pie/PIE.htc");
 }
 .b-offers__item:hover {
   border-color: #6dd2f3;
@@ -584,6 +648,7 @@ a.b-list__item:hover {
   border: 1px solid #fff;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  behavior: url("pie/PIE.htc");
 }
 .b-services-menu__link:before {
   content: '';
@@ -672,7 +737,7 @@ a.b-list__item:hover {
   font-size: 22px;
 }
 .b-slider__links__item + .b-slider__links__item {
-  margin-left: 20px;
+  margin-left: 18px;
 }
 .b-slider .bx-wrapper {
   position: relative;
@@ -683,6 +748,7 @@ a.b-list__item:hover {
   position: absolute;
   bottom: 15px;
   left: 0;
+  z-index: 120;
 }
 .b-slider .bx-wrapper .bx-pager .bx-pager-item {
   display: inline-block;
@@ -707,42 +773,42 @@ a.b-list__item:hover {
 .b-slider .bx-wrapper .bx-pager .bx-pager-item .bx-pager-link.active {
   background-position: -13px 0;
 }
-.b-social__icon,
-.b-social__vkontakte,
-.b-social__facebook,
-.b-social__twitter,
-.b-social__google {
+.b-social,
+.b-social--vkontakte,
+.b-social--facebook,
+.b-social--twitter,
+.b-social--google {
   display: inline-block;
   vertical-align: top;
-  margin: 0 5px 0 0;
-  background: url("../img/b-social-sprite.png") no-repeat;
   width: 18px;
   height: 18px;
+  margin: 0 5px 0 0;
+  background: url("../img/b-social-sprite.png") no-repeat;
   -webkit-box-shadow: 1px 2px 2px #909698;
   box-shadow: 1px 2px 2px #909698;
 }
-.b-social__vkontakte {
+.b-social--vkontakte {
   background-position: 0 0;
 }
-.b-social__vkontakte:hover {
+.b-social--vkontakte:hover {
   background-position: 0 -25px;
 }
-.b-social__facebook {
+.b-social--facebook {
   background-position: -29px 0;
 }
-.b-social__facebook:hover {
+.b-social--facebook:hover {
   background-position: -29px -25px;
 }
-.b-social__twitter {
+.b-social--twitter {
   background-position: -58px 0;
 }
-.b-social__twitter:hover {
+.b-social--twitter:hover {
   background-position: -58px -25px;
 }
-.b-social__google {
+.b-social--google {
   background-position: -87px 0;
 }
-.b-social__google:hover {
+.b-social--google:hover {
   background-position: -87px -25px;
 }
 .b-top-menu {
