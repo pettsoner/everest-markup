@@ -99,9 +99,11 @@ a img {
   box-sizing: border-box;
 }
 html {
-  font: 100%/1.2 'PT Sans', sans-serif;
+  font-size: 100%;
 }
 body {
+  line-height: 1.2;
+  font-family: 'PT Sans', sans-serif;
   min-width: 980px;
   background: url("../img/body-bg.jpg") repeat;
 }
@@ -155,25 +157,14 @@ a {
 }
 .col,
 .col-1-4,
-.col-2-4,
-.b-content,
-.b-header__social,
-.b-header__profile,
-.b-header__phones,
-.b-sidebar {
+.col-2-4 {
   display: inline-block;
-  vertical-align: top;
   padding: 0 10px;
 }
-.col-1-4,
-.b-header__social,
-.b-header__profile,
-.b-sidebar {
-  width: 245px;
+.col-1-4 {
+  width: 250px;
 }
-.col-2-4,
-.b-content,
-.b-header__phones {
+.col-2-4 {
   width: 480px;
 }
 .heading--xl {
@@ -202,6 +193,9 @@ a {
   font-size: 18px;
 }
 .b-content {
+  float: left;
+  width: 480px;
+  padding: 20px 10px 0;
   background: #fff;
   margin-top: -20px;
   padding-top: 40px;
@@ -217,6 +211,10 @@ a {
     --------------------------------------------- */
 /* Основная часть
     --------------------------------------------- */
+/* Иконки, телефоны, профиль
+    --------------------------------------------- */
+/* Логотип, часы
+    --------------------------------------------- */
 }
 .b-header__top {
   min-height: 76px;
@@ -224,13 +222,22 @@ a {
   color: #fff;
   font-size: 14px;
 }
+.b-header__main {
+  padding: 15px 0 0;
+}
 .b-header__social,
 .b-header__profile,
 .b-header__phones {
+  display: inline-block;
   vertical-align: middle;
   padding: 12px 20px;
 }
+.b-header__social,
+.b-header__profile {
+  width: 250px;
+}
 .b-header__phones {
+  width: 470px;
   text-align: center;
   font-weight: bold;
 }
@@ -238,7 +245,7 @@ a {
   display: inline-block;
   margin: 0 5px;
 }
-.b-header__phones b {
+.b-header__phones strong {
   font-size: 24px;
 }
 .b-header__profile {
@@ -255,9 +262,6 @@ a {
   left: -11px;
   top: 0;
 }
-.b-header__main {
-  padding: 15px 0 0;
-}
 .b-header__logo,
 .b-header__clock {
   width: 180px;
@@ -271,13 +275,77 @@ a {
 }
 .b-main {
   min-height: 200px;
-  background: url("../img/b-main-bg.jpg") repeat-y;
   margin-top: -20px;
+  padding-bottom: 20px;
+  background: url("../img/b-main-bg.jpg") repeat-y;
   -webkit-box-shadow: 0 10px 12px #e1e1e1;
   box-shadow: 0 10px 12px #e1e1e1;
 }
+.b-menu__item {
+  font-size: 14px;
+}
+.b-menu__item a {
+  display: block;
+  padding: 7px 10px;
+  background: #fff;
+  color: #333;
+  -webkit-box-shadow: 0 0 5px #c1cfd5;
+  box-shadow: 0 0 5px #c1cfd5;
+  border: 1px solid #ddedf5;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.b-menu__item a:hover {
+  background: -webkit-linear-gradient(top, #effbff, #daf2fa);
+  background: -moz-linear-gradient(top, #effbff, #daf2fa);
+  background: -o-linear-gradient(top, #effbff, #daf2fa);
+  background: -ms-linear-gradient(top, #effbff, #daf2fa);
+  background: linear-gradient(to bottom, #effbff, #daf2fa);
+}
+.b-services-menu__item + .b-services-menu__item {
+  margin-top: 20px;
+}
+.b-services-menu__link {
+  display: block;
+  position: relative;
+  width: 230px;
+  height: 100px;
+  font-weight: bold;
+  color: #006fa7;
+  border: 1px solid #fff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+}
+.b-services-menu__link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/b-services-menu__link.png") no-repeat;
+  height: 38px;
+  width: 100%;
+  z-index: 100;
+}
+.b-services-menu__link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.b-services-menu__link span {
+  display: inline-block;
+  padding: 3px 4px;
+  position: relative;
+  z-index: 120;
+  line-height: 0.9;
+  text-align: left;
+}
 .b-sidebar {
-  padding-top: 20px;
+  float: left;
+  width: 250px;
+  padding: 20px 10px 0;
 }
 .b-top-menu {
   height: 50px;
