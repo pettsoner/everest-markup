@@ -17,4 +17,11 @@ $(document).ready(function() {
 
     });
 
+    $('.b-slider__items').bxSlider({
+        /*speed: 500,
+        auto: true*/
+        pager: true,
+        controls: false
+    });
+
 });
