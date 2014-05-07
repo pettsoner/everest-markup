@@ -329,10 +329,12 @@ button {
 .link--dotted:hover {
   border: none;
 }
-.link--solid {
+.link--solid,
+.b-content__breadcrumbs__item a {
   border-bottom: solid 1px #fff;
 }
-.link--solid:hover {
+.link--solid:hover,
+.b-content__breadcrumbs__item a:hover {
   border: none;
 }
 .preview--small {
@@ -417,6 +419,30 @@ button {
   margin-top: -20px;
   padding: 40px 10px 0;
   background: #fff;
+  position: relative;
+}
+.b-content__breadcrumbs {
+  font-size: 12px;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  z-index: 150;
+}
+.b-content__breadcrumbs__item {
+  display: inline-block;
+  position: relative;
+  margin: 0 7px;
+}
+.b-content__breadcrumbs__item a {
+  color: #4283a4;
+  border-color: #4283a4;
+}
+.b-content__breadcrumbs__item + .b-content__breadcrumbs__item:before {
+  content: '•';
+  color: #4283a4;
+  position: absolute;
+  left: -12px;
+  top: 1px;
 }
 .b-exchange {
   background: #ebebeb;
@@ -581,8 +607,8 @@ button {
   background-position: 0 -166px;
 }
 .b-header {
-  background: url("../img/b-header-bg.jpg") no-repeat center center;
-  padding-bottom: 60px;
+  background: url("../img/b-header-bg.jpg") no-repeat 50% 35%;
+  padding-bottom: 50px;
 /* Верхняя часть
     --------------------------------------------- */
 /* Основная часть
@@ -677,6 +703,17 @@ button {
 .b-header__clock {
   float: right;
   text-align: center;
+  color: #b7ecff;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #333;
+}
+.b-header__clock img {
+  display: block;
+  margin: 0 auto;
+}
+.b-header__clock__time {
+  font-size: 20px;
+  color: #fff;
 }
 .b-icon,
 .b-icon--key,
@@ -1048,7 +1085,7 @@ a.b-list__item--active:hover {
 }
 .b-services-menu__sub__item--active,
 a.b-services-menu__sub__item--active:hover {
-  background: #fff url("../img/b-services-menu__item-active.png") center center;
+  background: #fff url("../img/b-services-menu__sub__item-active.png") center center;
 }
 .b-services-menu__link {
   display: block;
@@ -1118,7 +1155,7 @@ a.b-services-menu__sub__item--active:hover {
   margin-left: auto;
 }
 .b-slider {
-  margin: 0 10px;
+  margin: 0 10px 15px;
   width: 600px;
   height: 300px;
   float: left;
@@ -1205,6 +1242,8 @@ a.b-services-menu__sub__item--active:hover {
   background: url("../img/b-top-menu-bg.png") repeat-x;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  -webkit-box-shadow: 0 1px 5px #969696;
+  box-shadow: 0 1px 5px #969696;
 }
 .b-top-menu__item {
   display: inline-block;
