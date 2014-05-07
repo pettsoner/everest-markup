@@ -122,6 +122,12 @@ button {
 .bold {
   font-weight: bold;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .container {
   width: 980px;
   margin: 0 auto;
@@ -156,29 +162,6 @@ button {
 .link--solid:hover {
   border: none;
 }
-.row {
-  zoom: 1;
-}
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-}
-.row:after {
-  clear: both;
-}
-.col,
-.col-1-4,
-.col-2-4 {
-  display: inline-block;
-  padding: 0 10px;
-}
-.col-1-4 {
-  width: 250px;
-}
-.col-2-4 {
-  width: 480px;
-}
 .heading--xl {
   text-align: center;
   font-size: 26px;
@@ -204,15 +187,18 @@ button {
 }
 .heading--sm {
   font-size: 20px;
-  margin: 0 0 20px;
 }
 .heading--xs {
+  font-weight: bold;
   font-size: 18px;
 }
 .heading--xxs {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.heading--margin {
+  margin: 0 0 20px;
 }
 .form__radio {
   margin: 0;
@@ -306,6 +292,14 @@ button {
 .image--big {
   border: 6px solid #fff;
 }
+.image--left {
+  float: left;
+  margin: 0 14px 14px 0;
+}
+.image--right {
+  float: right;
+  margin: 0 0 14px 14px;
+}
 .preview--small {
   position: relative;
 }
@@ -339,10 +333,41 @@ button {
 .text {
   font-size: 14px;
   color: #333;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 .text strong {
   font-weight: bold;
+}
+.text__link {
+  color: #006fa7;
+  text-decoration: underline;
+}
+.text__link:hover {
+  text-decoration: none;
+}
+.text__link:visited {
+  color: #86132a;
+}
+.text--margin {
+  margin: 0 0 25px;
+}
+.ul,
+.ul--circle,
+.ul--line {
+  margin: 5px 12px;
+  line-height: 1.45;
+}
+.ul--circle li:before {
+  display: inline-block;
+  content: '•';
+  color: #006fa7;
+  padding-right: 12px;
+}
+.ul--line li:before {
+  display: inline-block;
+  content: '—';
+  color: #006fa7;
+  padding-right: 12px;
 }
 .b-content {
   float: left;
@@ -350,9 +375,6 @@ button {
   margin-top: -20px;
   padding: 40px 10px 0;
   background: #fff;
-}
-.b-content--wide {
-  width: 730px;
 }
 .b-exchange {
   background: #ebebeb;
@@ -519,20 +541,30 @@ button {
 .b-header__phones {
   display: inline-block;
   vertical-align: middle;
-  padding: 11px 20px;
+  padding: 11px 15px;
 }
 .b-header__social,
 .b-header__profile {
-  width: 250px;
+  width: 285px;
 }
 .b-header__phones {
-  width: 470px;
+  width: 400px;
   text-align: center;
   font-weight: bold;
 }
 .b-header__phones span {
   display: inline-block;
   margin: 0 5px;
+  position: relative;
+}
+.b-header__phones span:first-child:before {
+  content: '';
+  background: url("../img/icons-sprite.png") no-repeat -26px -88px;
+  width: 12px;
+  height: 18px;
+  position: absolute;
+  left: -15px;
+  top: 30%;
 }
 .b-header__phones strong {
   font-size: 24px;
@@ -552,6 +584,15 @@ button {
   left: -11px;
   top: 0;
 }
+.b-header__profile__link--auth:after {
+  content: '';
+  background: url("../img/icons-sprite.png") no-repeat 0 -88px;
+  width: 16px;
+  height: 11px;
+  position: absolute;
+  left: -25px;
+  top: 30%;
+}
 .b-header__logo,
 .b-header__clock {
   width: 180px;
@@ -564,6 +605,8 @@ button {
   text-align: center;
 }
 .b-icon,
+.b-icon--key,
+.b-icon--phone,
 .b-icon--flag,
 .b-icon--flag-ru,
 .b-icon--flag-eu,
@@ -579,6 +622,19 @@ button {
 .b-icon--sidebar-check,
 .b-icon--slider {
   background: url("../img/icons-sprite.png") no-repeat;
+}
+.b-icon--key {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  background-position: 0 -88px;
+}
+.b-icon--phone {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 12px;
+  height: 18px;
+  background-position: -26px -88px;
 }
 .b-icon--flag,
 .b-icon--flag-ru,
@@ -738,7 +794,16 @@ button {
   border-radius: 2px;
   position: relative;
 }
-.b-list__item--active {
+a.b-list__item:hover {
+  background: #daf2fa;
+  background: -webkit-linear-gradient(top, #effbff, #daf2fa);
+  background: -moz-linear-gradient(top, #effbff, #daf2fa);
+  background: -o-linear-gradient(top, #effbff, #daf2fa);
+  background: -ms-linear-gradient(top, #effbff, #daf2fa);
+  background: linear-gradient(to bottom, #effbff, #daf2fa);
+}
+.b-list__item--active,
+a.b-list__item--active:hover {
   background: #ddf3fa;
   background: -webkit-linear-gradient(top, #b4e3f2, #ddf3fa);
   background: -moz-linear-gradient(top, #b4e3f2, #ddf3fa);
@@ -749,14 +814,6 @@ button {
   -webkit-box-shadow: 0 0 4px #8bcae3;
   box-shadow: 0 0 4px #8bcae3;
 }
-a.b-list__item:hover {
-  background: #daf2fa;
-  background: -webkit-linear-gradient(top, #effbff, #daf2fa);
-  background: -moz-linear-gradient(top, #effbff, #daf2fa);
-  background: -o-linear-gradient(top, #effbff, #daf2fa);
-  background: -ms-linear-gradient(top, #effbff, #daf2fa);
-  background: linear-gradient(to bottom, #effbff, #daf2fa);
-}
 .b-list__item--text {
   padding-bottom: 15px;
   line-height: 1.4;
@@ -765,9 +822,15 @@ a.b-list__item:hover {
   min-height: 200px;
   margin-top: -20px;
   padding-bottom: 40px;
-  background: url("../img/b-main-bg.jpg") repeat-y;
+  background: #fff url("../img/b-main-bg.jpg") repeat-y;
   -webkit-box-shadow: 0 10px 12px #e1e1e1;
   box-shadow: 0 10px 12px #e1e1e1;
+}
+.b-main--two-column {
+  background-position: -730px 0;
+}
+.b-main--two-column .b-content {
+  width: 730px;
 }
 .b-offers {
   zoom: 1;
@@ -865,9 +928,9 @@ a.b-list__item:hover {
 .b-services-menu__sub {
   display: none;
 }
-.b-services-menu__sub__item--active {
-  background-image: url("../img/b-services-menu__item-active.png");
-  background-position: center center;
+.b-services-menu__sub__item--active,
+a.b-services-menu__sub__item--active:hover {
+  background: #fff url("../img/b-services-menu__item-active.png") center center;
 }
 .b-services-menu__link {
   display: block;
