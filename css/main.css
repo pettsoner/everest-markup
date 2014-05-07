@@ -222,7 +222,8 @@ button {
   margin: 10px 0;
 }
 .form__input,
-.form__textarea {
+.form__textarea,
+.form__input--rounded {
   display: block;
   margin: 5px 0;
   padding: 5px 10px;
@@ -235,8 +236,14 @@ button {
   box-shadow: inset 1px 1px 3px #dcdbdb;
 }
 .form__input:focus,
-.form__textarea:focus {
+.form__textarea:focus,
+.form__input--rounded:focus {
   border-color: #8fbacf;
+}
+.form__input--rounded {
+  border-color: #8fbacf;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
 }
 .form__textarea {
   height: 100px;
@@ -283,8 +290,10 @@ button {
 .image--small,
 .image--big {
   display: inline-block;
-  -webkit-box-shadow: 0 2px 5px #c2c2c2;
-  box-shadow: 0 2px 5px #c2c2c2;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px #949494;
+  box-shadow: 0 2px 5px #949494;
 }
 .image img,
 .image--small img,
@@ -448,14 +457,18 @@ button {
 .b-exchange__rate {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 5px;
   color: #333;
 }
 .b-exchange__currency {
-  width: 45px;
+  min-width: 50px;
   font-size: 14px;
 }
+.b-exchange__flag {
+  margin-right: 10px;
+}
 .b-exchange__rate {
+  min-width: 50px;
   font-weight: bold;
 }
 .b-footer {
@@ -597,14 +610,14 @@ button {
 .b-header__phones {
   display: inline-block;
   vertical-align: middle;
-  padding: 11px 15px;
+  padding: 11px;
 }
 .b-header__social,
 .b-header__profile {
-  width: 285px;
+  width: 303px;
 }
 .b-header__phones {
-  width: 400px;
+  width: 365px;
   text-align: center;
   font-weight: bold;
 }
@@ -628,17 +641,22 @@ button {
 .b-header__profile {
   text-align: right;
 }
+.b-header__profile__image {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 8px;
+}
 .b-header__profile__link {
-  margin: 0 8px;
+  margin: 0 5px;
   color: #fff;
   position: relative;
 }
 .b-header__profile__link + .b-header__profile__link:before {
   content: '|';
-  color: #61b0ce;
+  color: #72b7cf;
   position: absolute;
-  left: -11px;
-  top: 0;
+  left: -8px;
+  top: 1px;
 }
 .b-header__profile__link--auth:after {
   content: '';
@@ -667,6 +685,9 @@ button {
 .b-icon--flag-ru,
 .b-icon--flag-eu,
 .b-icon--flag-us,
+.b-icon--rate,
+.b-icon--rate-down,
+.b-icon--rate-up,
 .b-icon--social,
 .b-icon--social-vk,
 .b-icon--social-fb,
@@ -708,6 +729,19 @@ button {
 }
 .b-icon--flag-us {
   background-position: -116px 0;
+}
+.b-icon--rate,
+.b-icon--rate-down,
+.b-icon--rate-up {
+  display: inline-block;
+  width: 5px;
+  height: 11px;
+}
+.b-icon--rate-down {
+  background-position: -92px -88px;
+}
+.b-icon--rate-up {
+  background-position: -83px -88px;
 }
 .b-icon--social,
 .b-icon--social-vk,
@@ -966,6 +1000,34 @@ a.b-list__item--active:hover {
   margin-left: 5px;
   font-weight: normal;
 }
+.b-search {
+  position: relative;
+}
+.b-search__btn {
+  background: url("../img/icons-sprite.png") no-repeat -59px -88px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  z-index: 100;
+}
+.b-search__input {
+  width: 280px;
+  padding-right: 32px;
+}
+.b-search__input::-moz-placeholder {
+  font-style: italic;
+  font-weight: bold;
+}
+.b-search__input:-ms-input-placeholder {
+  font-style: italic;
+  font-weight: bold;
+}
+.b-search__input::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: bold;
+}
 .b-services-menu__item + .b-services-menu__item {
   margin-top: 20px;
 }
@@ -1167,6 +1229,11 @@ a.b-services-menu__sub__item--active:hover {
   background: -ms-linear-gradient(top, #96cbe2, #c0e1ef);
   background: linear-gradient(to bottom, #96cbe2, #c0e1ef);
 }
+.b-top-menu__search {
+  float: right;
+  margin: 0 5px;
+  padding: 2px;
+}
 .b-tour {
   margin: 0 0 40px;
 }
@@ -1218,18 +1285,20 @@ a.b-services-menu__sub__item--active:hover {
   color: #046;
   -webkit-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
+}
+.b-tour__timetable__day div {
   position: relative;
 }
-.b-tour__timetable__day strong {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-}
-.b-tour__timetable__day:after {
+.b-tour__timetable__day div:after {
   content: '';
   position: absolute;
   right: -25px;
   top: 30%;
   border: 12px solid transparent;
   border-left: 12px solid #cfd9e6;
+}
+.b-tour__timetable__day strong {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
 }
