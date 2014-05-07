@@ -14,6 +14,8 @@
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    
 </head>
 <body>
 
@@ -29,10 +31,10 @@
                 
                 <div class="b-header__social">
                     Мы в сети:&nbsp;
-                    <a href="#" class="b-social--vkontakte"></a>
-                    <a href="#" class="b-social--facebook"></a>
-                    <a href="#" class="b-social--twitter"></a>
-                    <a href="#" class="b-social--google"></a>
+                    <a href="#" class="b-icon--social-vk"></a>
+                    <a href="#" class="b-icon--social-fb"></a>
+                    <a href="#" class="b-icon--social-tw"></a>
+                    <a href="#" class="b-icon--social-g"></a>
                 </div>
 
                 <div class="b-header__phones">
@@ -68,7 +70,7 @@
                     <li class="b-slider__item">
                         <img alt="" src="img/b-slider__image-1.jpg" class="b-slider__image">
 
-                        <h2 class="b-slider__heading">Все страны<br>Европы</h2>
+                        <div class="b-slider__heading">Все страны<br>Европы</div>
 
                         <div class="b-slider__desc">
                             <ul class="b-slider__links">
@@ -96,7 +98,7 @@
                     <li class="b-slider__item">
                         <img alt="" src="img/b-slider__image-1.jpg" class="b-slider__image">
 
-                        <h2 class="b-slider__heading">Все страны<br>Европы</h2>
+                        <div class="b-slider__heading">Все страны<br>Европы</div>
                     </li><!-- /.b-slider__item -->
                 </ul>
             </div><!-- /.b-slider -->
@@ -117,7 +119,7 @@
         <aside class="b-sidebar">
 
             <ul class="b-services-menu">
-                <li class="b-services-menu__item active">
+                <li class="b-services-menu__item b-services-menu__item--active">
                     <a href="#" class="b-services-menu__link">
                         <img alt="" src="img/b-services-menu__image-1.jpg" class="b-services-menu__image">
 
@@ -125,7 +127,7 @@
                     </a>
 
                     <ul class="b-list b-services-menu__sub">
-                        <li><a href="#" class="b-list__item">Болгария</a></li>
+                        <li><a href="#" class="b-list__item b-services-menu__sub__item--active">Болгария</a></li>
                         <li><a href="#" class="b-list__item">Италия</a></li>
                         <li><a href="#" class="b-list__item">Испания</a></li>
                         <li><a href="#" class="b-list__item">Крым</a></li>
@@ -240,7 +242,7 @@
 
                 <div class="b-last-news__items">
                     <div class="b-last-news__item">
-                        <a href="#" class="preview image b-last-news__image"><img alt="" src="img/b-last-news__image-1.jpg"></a>
+                        <a href="#" class="preview--small image--small b-last-news__image"><img alt="" src="img/b-last-news__image-1.jpg"></a>
 
                         <div class="b-last-news__date">12.12.2013</div>
 
@@ -248,7 +250,7 @@
                     </div><!-- /.b-last-news__item -->
 
                     <div class="b-last-news__item">
-                        <a href="#" class="preview image b-last-news__image"><img alt="" src="img/b-last-news__image-2.jpg"></a>
+                        <a href="#" class="preview--small image--small b-last-news__image"><img alt="" src="img/b-last-news__image-2.jpg"></a>
 
                         <div class="b-last-news__date">12.12.2013</div>
 
@@ -256,7 +258,7 @@
                     </div><!-- /.b-last-news__item -->
 
                     <div class="b-last-news__item">
-                        <a href="#" class="preview image b-last-news__image"><img alt="" src="img/b-last-news__image-3.jpg"></a>
+                        <a href="#" class="preview--small image--small b-last-news__image"><img alt="" src="img/b-last-news__image-3.jpg"></a>
 
                         <div class="b-last-news__date">12.12.2013</div>
 
@@ -264,7 +266,7 @@
                     </div><!-- /.b-last-news__item -->
 
                     <div class="b-last-news__item">
-                        <a href="#" class="preview image b-last-news__image"><img alt="" src="img/b-last-news__image-4.jpg"></a>
+                        <a href="#" class="preview--small image--small b-last-news__image"><img alt="" src="img/b-last-news__image-4.jpg"></a>
 
                         <div class="b-last-news__date">12.12.2013</div>
 
@@ -282,29 +284,45 @@
         <aside class="b-sidebar">
 
             <section class="b-sidebar__section b-exchange">
-                <h2 class="b-exchange__heading heading--lg">Курсы валют</h2>
+                <div class="b-exchange__heading heading--lg">Курсы валют</div>
 
                 <div class="b-exchange__item">
                     <span class="b-exchange__currency">Доллар</span>
-                    <span class="b-exchange__flag b-flag--us"></span>
+                    <span class="b-exchange__flag b-icon--flag-us"></span>
                     <span class="b-exchange__rate">147,56</span>
                 </div>
 
                 <div class="b-exchange__item">
                     <span class="b-exchange__currency">Евро</span>
-                    <span class="b-exchange__flag b-flag--eu"></span>
+                    <span class="b-exchange__flag b-icon--flag-eu"></span>
                     <span class="b-exchange__rate">147,56</span>
                 </div>
 
                 <div class="b-exchange__item">
                     <span class="b-exchange__currency">Рубль</span>
-                    <span class="b-exchange__flag b-flag--ru"></span>
+                    <span class="b-exchange__flag b-icon--flag-ru"></span>
                     <span class="b-exchange__rate">147,56</span>
                 </div>
             </section>
 
             <section class="b-sidebar__section">
-                <h2 class="b-sidebar__section__heading heading--xxs">Полезно знать</h2>
+                <div class="b-sidebar__section__heading heading--xxs">
+                    <span class="b-icon--sidebar-info"></span> Полезно знать
+                </div>
+
+                <ul class="b-list b-sidebar__section__menu">
+                    <li><a href="#" class="b-list__item b-list__item--active">Памятки</a></li>
+                    <li><a href="#" class="b-list__item">Советы</a></li>
+                    <li><a href="#" class="b-list__item">Словарь туриста</a></li>
+                    <li><a href="#" class="b-list__item">Страховки</a></li>
+                    <li><a href="#" class="b-list__item">Страны</a></li>
+                </ul><!-- /.b-list.b-sidebar__section__menu -->
+            </section><!-- /.b-sidebar__section -->
+
+            <section class="b-sidebar__section">
+                <div class="b-sidebar__section__heading heading--xxs">
+                    <span class="b-icon--sidebar-say"></span> Отзывы
+                </div>
 
                 <ul class="b-list b-sidebar__section__menu">
                     <li><a href="#" class="b-list__item">Памятки</a></li>
@@ -316,19 +334,9 @@
             </section><!-- /.b-sidebar__section -->
 
             <section class="b-sidebar__section">
-                <h2 class="b-sidebar__section__heading heading--xxs">Отзывы</h2>
-
-                <ul class="b-list b-sidebar__section__menu">
-                    <li><a href="#" class="b-list__item">Памятки</a></li>
-                    <li><a href="#" class="b-list__item">Советы</a></li>
-                    <li><a href="#" class="b-list__item">Словарь туриста</a></li>
-                    <li><a href="#" class="b-list__item">Страховки</a></li>
-                    <li><a href="#" class="b-list__item">Страны</a></li>
-                </ul><!-- /.b-list.b-sidebar__section__menu -->
-            </section><!-- /.b-sidebar__section -->
-
-            <section class="b-sidebar__section">
-                <h2 class="b-sidebar__section__heading heading--xxs">Опрос</h2>
+                <div class="b-sidebar__section__heading heading--xxs">
+                    <span class="b-icon--sidebar-check"></span> Опрос
+                </div>
                 
                 <form action="/" method="post" class="form b-list">
                     <p class="b-list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, inventore rem culpa aperiam dolor in. Nam et voluptatibus debitis mollitia eos vel repellat laboriosam aperiam.</p>
@@ -356,7 +364,7 @@
             </div><!-- /.b-footer__col.b-footer__logo -->
 
             <div class="b-footer__col">
-                <h2 class="b-footer__heading">Меню:</h2>
+                <div class="b-footer__heading">Меню:</div>
 
                 <ul class="b-footer__menu">
                     <li class="b-footer__menu__item"><a href="#">Главная</a></li>
@@ -375,22 +383,22 @@
             </div><!-- /.b-footer__col -->
 
             <div class="b-footer__col">
-                <h2 class="b-footer__heading">Контактные данные:</h2>
+                <div class="b-footer__heading">Контактные данные:</div>
 
                 <p class="b-footer__text">Адрес:  Российская Федерация, г. Москва, <br> пр. Свободны 11
 
                 <p class="b-footer__text">Тел.: (479) 999 99 00<br>(479) 999 99 00</p>
 
                 <div class="b-footer__social">
-                    <a href="#" class="b-social--vkontakte"></a>
-                    <a href="#" class="b-social--facebook"></a>
-                    <a href="#" class="b-social--twitter"></a>
-                    <a href="#" class="b-social--google"></a>
+                    <a href="#" class="b-icon--social-vk"></a>
+                    <a href="#" class="b-icon--social-fb"></a>
+                    <a href="#" class="b-icon--social-tw"></a>
+                    <a href="#" class="b-icon--social-g"></a>
                 </div><!-- /.b-footer__social.b-social -->
             </div><!-- /.b-footer__col -->
 
             <div class="b-footer__col">
-                <h2 class="b-footer__heading">Возникли вопросы? Напишити нам!</h2>
+                <div class="b-footer__heading">Возникли вопросы? Напишити нам!</div>
 
                 <a href="#" class="btn btn--lg btn--light b-footer__btn">Написать сообщение</a>
 
@@ -405,5 +413,6 @@
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/jquery.bxslider.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -14,6 +14,10 @@
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -29,10 +33,10 @@
                 
                 <div class="b-header__social">
                     Мы в сети:&nbsp;
-                    <a href="#" class="b-social--vkontakte"></a>
-                    <a href="#" class="b-social--facebook"></a>
-                    <a href="#" class="b-social--twitter"></a>
-                    <a href="#" class="b-social--google"></a>
+                    <a href="#" class="b-icon--social-vk"></a>
+                    <a href="#" class="b-icon--social-fb"></a>
+                    <a href="#" class="b-icon--social-tw"></a>
+                    <a href="#" class="b-icon--social-g"></a>
                 </div>
 
                 <div class="b-header__phones">
@@ -62,7 +66,7 @@
             <div class="b-header__logo">
                 <a href="#"><img alt="" src="img/logo.png"></a>
             </div><!-- /.b-header__logo -->
-            
+
             <div class="b-header__clock">
                 <img src="img/b-header__clock.png" alt="">
             </div><!-- /.b-header__clock -->
@@ -154,10 +158,67 @@
             <section class="b-tour">
                 <h1 class="heading--xl">Тур в Питер <small>(5 дней)</small></h1>
 
+                <div class="b-tour__date">Дата тура: <strong>18.02.2014, 24.02.2014, 30.02.2014, 15.03.2014</strong></div>
+
+                <table class="b-tour__timetable">
+                    <tr class="b-tour__timetable__item">
+                        <td class="b-tour__timetable__day">
+                            <strong>1</strong> день
+                        </td>
+                        <td class="b-tour__timetable__desc text">Отправление из Минска. Проезд по территории Беларуси и России.</td>
+                    </tr>
+
+                    <tr class="b-tour__timetable__item">
+                        <td class="b-tour__timetable__day">
+                            <strong>2</strong> день
+                        </td>
+                        <td class="b-tour__timetable__desc text">Прибытие в северную столицу России – Санкт-Петербург ориентировочно в<br>07.30 – 08. 00. Завтрак – 09.00. Экскурсия «Петровский Петербург»</td>
+                    </tr>
+
+                    <tr class="b-tour__timetable__item">
+                        <td class="b-tour__timetable__day">
+                            <strong>3</strong> день
+                        </td>
+                        <td class="b-tour__timetable__desc text">Завтрак . Обзорная экскурсия по Санкт-Петербургу «Портрет Великого города»</td>
+                    </tr>
+
+                    <tr class="b-tour__timetable__item">
+                        <td class="b-tour__timetable__day">
+                            <strong>4</strong> день
+                        </td>
+                        <td class="b-tour__timetable__desc text">Выселение из гостиницы. Завтрак.   Экскурсия «Загородные императорские<br>резиденции» – Царское село Время для шопинга в супермаркете «Лента» или «Окей».<br>Отправление в Минск.</td>
+                    </tr>
+
+                    <tr class="b-tour__timetable__item">
+                        <td class="b-tour__timetable__day">
+                            <strong>5</strong> день
+                        </td>
+                        <td class="b-tour__timetable__desc text">Прибытие в Минск ориентировочно в 07.00-08.00 утра.</td>
+                    </tr>
+                </table>
+
+                <div class="b-tour__price heading--sm">Цена: взр 180 $, реб 170 $</div>
+
+                <p class="b-tour__text text">
+                    Стоимость тур. путевки включает:<br>
+                    * проезд в комфортабельном автобусе<br>
+                    * проживание в гостинице Балтийская/Смольнинская/Северная<br>
+                    * 3 завтрака <br>
+                    * все экскурсии, которые включены в программу, входные билеты в музеи: Исаакиевский собор, Эрмитаж,<br> Петергофский заповедник — Нижний парк, услуги экскурсовода, гида. <br><br>
+
+                    <strong>Дополнительно: медстраховка 2 у.е</strong>
+                </p>
             </section>
 
             <section class="b-other-offers">
                 <h2 class="heading--xl">Другие предложения</h2>
+                
+                <ul class="b-other-offers__items">
+                    <li class="b-other-offers__item"><a href="#">Отдых на море в<br> Ллорет де Мар</a></li>
+                    <li class="b-other-offers__item"><a href="#">Отдых на море в<br> Испании</a></li>
+                    <li class="b-other-offers__item"><a href="#">Экскурсии по всей<br> Белоруси</a></li>
+                    <li class="b-other-offers__item"><a href="#">Новый год в Бресте и<br> Минске</a></li>
+                </ul>
 
             </section>
 
@@ -165,10 +226,10 @@
                 <h2 class="heading--xl">Фотогалерея</h2>
                 
                 <ul class="b-gallery__items">
-                    <li class="b-gallery__item"><a href="" class="preview image"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
-                    <li class="b-gallery__item"><a href="" class="preview image"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
-                    <li class="b-gallery__item"><a href="" class="preview image"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
-                    <li class="b-gallery__item"><a href="" class="preview image"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
+                    <li class="b-gallery__item"><a href="" class="preview--big image--big"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
+                    <li class="b-gallery__item"><a href="" class="preview--big image--big"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
+                    <li class="b-gallery__item"><a href="" class="preview--big image--big"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
+                    <li class="b-gallery__item"><a href="" class="preview--big image--big"><img src="img/b-gallery__image-1.jpg" alt=""></a></li>
                 </ul>
             </section>
             
@@ -185,7 +246,7 @@
             </div><!-- /.b-footer__col.b-footer__logo -->
 
             <div class="b-footer__col">
-                <h2 class="b-footer__heading">Меню:</h2>
+                <div class="b-footer__heading">Меню:</div>
 
                 <ul class="b-footer__menu">
                     <li class="b-footer__menu__item"><a href="#">Главная</a></li>
@@ -204,22 +265,22 @@
             </div><!-- /.b-footer__col -->
 
             <div class="b-footer__col">
-                <h2 class="b-footer__heading">Контактные данные:</h2>
+                <div class="b-footer__heading">Контактные данные:</div>
 
                 <p class="b-footer__text">Адрес:  Российская Федерация, г. Москва, <br> пр. Свободны 11
 
                 <p class="b-footer__text">Тел.: (479) 999 99 00<br>(479) 999 99 00</p>
 
                 <div class="b-footer__social">
-                    <a href="#" class="b-social--vkontakte"></a>
-                    <a href="#" class="b-social--facebook"></a>
-                    <a href="#" class="b-social--twitter"></a>
-                    <a href="#" class="b-social--google"></a>
+                    <a href="#" class="b-icon--social-vk"></a>
+                    <a href="#" class="b-icon--social-fb"></a>
+                    <a href="#" class="b-icon--social-tw"></a>
+                    <a href="#" class="b-icon--social-g"></a>
                 </div><!-- /.b-footer__social.b-social -->
             </div><!-- /.b-footer__col -->
 
             <div class="b-footer__col">
-                <h2 class="b-footer__heading">Возникли вопросы? Напишити нам!</h2>
+                <div class="b-footer__heading">Возникли вопросы? Напишити нам!</div>
 
                 <a href="#" class="btn btn--lg btn--light b-footer__btn">Написать сообщение</a>
 

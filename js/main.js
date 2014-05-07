@@ -1,14 +1,17 @@
 $(document).ready(function() {
 
     $('.b-services-menu__link').click(function(e) {
-        $subMenu = $(this).parent().find('ul');
+        $menuItem = $(this).parent();
+        $subMenu  = $menuItem.find('ul');
 
         if ($subMenu.length) {
 
             if ($subMenu.is(':visible')) {
                 $subMenu.slideUp(300);
+                $menuItem.removeClass('b-services-menu__item--active');
             } else {
                 $subMenu.slideDown(300);
+                $menuItem.addClass('b-services-menu__item--active');
             }
 
             e.preventDefault();
@@ -18,10 +21,15 @@ $(document).ready(function() {
     });
 
     $('.b-slider__items').bxSlider({
-        /*speed: 500,
-        auto: true*/
-        pager: true,
         controls: false
+    });
+
+    $('.b-gallery__items').bxSlider({
+        controls: true,
+        pager: false,
+        maxSlides: 4,
+        slideWidth: 168,
+        slideMargin: 2
     });
 
 });
