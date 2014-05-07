@@ -141,11 +141,6 @@ button {
 .container:after {
   clear: both;
 }
-.form__radio {
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
 .btn {
   display: block;
   outline: none;
@@ -214,6 +209,37 @@ button {
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: default;
+}
+.form__radio {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+.form__label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.form__input,
+.form__textarea {
+  display: block;
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #cfd9e6;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 1px 1px 3px #dcdbdb;
+  box-shadow: inset 1px 1px 3px #dcdbdb;
+}
+.form__input:focus,
+.form__textarea:focus {
+  border-color: #8fbacf;
+}
+.form__textarea {
+  height: 100px;
 }
 .heading--xl {
   text-align: center;
@@ -368,6 +394,13 @@ button {
   content: '—';
   color: #006fa7;
   padding-right: 12px;
+}
+.b-contact-form__btn {
+  margin: 20px 0;
+}
+.b-contact-form__input,
+.b-contact-form__textarea {
+  width: 340px;
 }
 .b-content {
   float: left;
