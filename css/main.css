@@ -592,12 +592,22 @@ button {
   position: absolute;
   top: 38%;
 }
+.b-gallery .bx-wrapper .bx-prev.disabled,
+.b-gallery .bx-wrapper .bx-next.disabled {
+  pointer-events: none;
+}
 .b-gallery .bx-wrapper .bx-next {
   background-position: -26px -136px;
   right: -18px;
 }
 .b-gallery .bx-wrapper .bx-next:hover {
   background-position: -26px -166px;
+}
+.b-gallery .bx-wrapper .bx-next:active {
+  background-position: -26px -195px;
+}
+.b-gallery .bx-wrapper .bx-next.disabled {
+  background-position: -26px -226px;
 }
 .b-gallery .bx-wrapper .bx-prev {
   background-position: 0 -136px;
@@ -606,8 +616,14 @@ button {
 .b-gallery .bx-wrapper .bx-prev:hover {
   background-position: 0 -166px;
 }
+.b-gallery .bx-wrapper .bx-prev:active {
+  background-position: 0 -195px;
+}
+.b-gallery .bx-wrapper .bx-prev.disabled {
+  background-position: 0 -226px;
+}
 .b-header {
-  background: url("../img/b-header-bg.jpg") no-repeat 50% 35%;
+  background: url("../img/b-header-bg.jpg") no-repeat center top;
   padding-bottom: 50px;
 /* Верхняя часть
     --------------------------------------------- */
@@ -960,17 +976,19 @@ a.b-list__item--active:hover {
   width: 730px;
 }
 .b-offers {
-  zoom: 1;
   margin: 0 0 30px;
 /* Заголовок 
     -------------------------------------------- */
 }
-.b-offers:before,
-.b-offers:after {
+.b-offers__items {
+  zoom: 1;
+}
+.b-offers__items:before,
+.b-offers__items:after {
   content: "";
   display: table;
 }
-.b-offers:after {
+.b-offers__items:after {
   clear: both;
 }
 .b-offers__item {
@@ -992,12 +1010,13 @@ a.b-list__item--active:hover {
 .b-offers__heading {
   display: table;
   width: 100%;
-  height: 54px;
-  padding: 8px 0 0;
-  background: url("../img/b-offers__heading-bg.png") no-repeat;
+  height: 45px;
+  background: url("../img/b-offers__heading-bg.png") repeat-x;
   text-align: center;
   font-weight: bold;
   line-height: 1;
+  -webkit-box-shadow: 0 -3px 8px 0px #6c6c6c;
+  box-shadow: 0 -3px 8px 0px #6c6c6c;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1005,6 +1024,14 @@ a.b-list__item--active:hover {
 .b-offers__heading span {
   display: table-cell;
   vertical-align: middle;
+}
+.b-offers__heading:after {
+  content: '';
+  position: absolute;
+  left: 44%;
+  top: -20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff;
 }
 .b-other-offers {
   margin: 0 0 40px;
@@ -1036,6 +1063,91 @@ a.b-list__item--active:hover {
   display: inline-block;
   margin-left: 5px;
   font-weight: normal;
+}
+.b-pagination {
+  text-align: center;
+/* Назад 
+    ----------------------------------------------- */
+/* Вперед 
+    ----------------------------------------------- */
+/* Меньше 
+    ----------------------------------------------- */
+/* Больше 
+    ----------------------------------------------- */
+}
+.b-pagination__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+.b-pagination__item {
+  margin: 0 3px;
+}
+.b-pagination__item--active,
+.b-pagination__item:hover {
+  font-weight: bold;
+  color: #4283a4;
+}
+.b-pagination__prev,
+.b-pagination__next,
+.b-pagination__less,
+.b-pagination__more {
+  width: 36px;
+  height: 27px;
+  background: url("../img/icons-sprite.png") no-repeat;
+}
+.b-pagination__prev--disabled,
+.b-pagination__next--disabled,
+.b-pagination__less--disabled,
+.b-pagination__more--disabled {
+  pointer-events: none;
+}
+.b-pagination__prev {
+  background-position: -95px -112px;
+}
+.b-pagination__prev:hover {
+  background-position: -95px -152px;
+}
+.b-pagination__prev:active {
+  background-position: -95px -192px;
+}
+.b-pagination__prev--disabled {
+  background-position: -95px -232px;
+}
+.b-pagination__next {
+  background-position: -131px -112px;
+}
+.b-pagination__next:hover {
+  background-position: -131px -152px;
+}
+.b-pagination__next:active {
+  background-position: -131px -192px;
+}
+.b-pagination__next--disabled {
+  background-position: -131px -232px;
+}
+.b-pagination__less {
+  background-position: -57px -112px;
+}
+.b-pagination__less:hover {
+  background-position: -57px -152px;
+}
+.b-pagination__less:active {
+  background-position: -57px -192px;
+}
+.b-pagination__less--disabled {
+  background-position: -57px -232px;
+}
+.b-pagination__more {
+  background-position: -169px -112px;
+}
+.b-pagination__more:hover {
+  background-position: -169px -152px;
+}
+.b-pagination__more:active {
+  background-position: -169px -192px;
+}
+.b-pagination__more--disabled {
+  background-position: -169px -232px;
 }
 .b-search {
   position: relative;
@@ -1144,11 +1256,22 @@ a.b-services-menu__sub__item--active:hover {
 }
 .b-sidebar__section__heading {
   display: block;
-  height: 49px;
+  height: 40px;
   padding: 10px 12px;
-  margin: 0 0 5px;
-  background: url("../img/b-sidebar__section-bg.png");
+  margin: 0 0 14px;
+  background: #6ccbf5;
   color: #fff;
+  -webkit-box-shadow: 0 1px 3px #d0d0d0;
+  box-shadow: 0 1px 3px #d0d0d0;
+  position: relative;
+}
+.b-sidebar__section__heading:after {
+  content: '';
+  position: absolute;
+  left: 44%;
+  bottom: -18px;
+  border: 9px solid transparent;
+  border-top: 9px solid #6ccbf5;
 }
 .b-sidebar__section__btn {
   margin-right: auto;

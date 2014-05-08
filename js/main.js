@@ -29,7 +29,9 @@ $(document).ready(function() {
         pager: false,
         maxSlides: 4,
         slideWidth: 168,
-        slideMargin: 2
+        slideMargin: 2,
+        infiniteLoop: false,
+        hideControlOnEnd: true
     });
 
 });
