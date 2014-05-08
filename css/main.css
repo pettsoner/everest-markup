@@ -406,6 +406,42 @@ button {
   color: #006fa7;
   padding-right: 12px;
 }
+.b-clock {
+  position: relative;
+  margin: 0 auto;
+  width: 114px;
+  height: 114px;
+}
+.b-clock--9-18 {
+  background: url("../img/clock/b-clock--9-18.png") no-repeat;
+}
+.b-clock--9-19 {
+  background: url("../img/clock/b-clock--9-19.png") no-repeat;
+}
+.b-clock--10-17 {
+  background: url("../img/clock/b-clock--10-17.png") no-repeat;
+}
+.b-clock__min,
+.b-clock__sec,
+.b-clock__hour {
+  position: absolute;
+  height: 114px;
+  width: 30px;
+  top: -2px;
+  left: 42px;
+}
+.b-clock__hour {
+  background: url("../img/clock/b-clock__hour.png") no-repeat;
+  z-index: 1;
+}
+.b-clock__min {
+  background: url("../img/clock/b-clock__min.png") no-repeat;
+  z-index: 2;
+}
+.b-clock__sec {
+  background: url("../img/clock/b-clock__sec.png") no-repeat;
+  z-index: 3;
+}
 .b-contact-form__btn {
   margin: 20px 0;
 }
@@ -1438,6 +1474,7 @@ a.b-services-menu__sub__item--active:hover {
 }
 .b-tour__timetable__day {
   width: 13.3%;
+  background: #d6dde5;
   background: -webkit-linear-gradient(top, #f2f6fa, #d6dde5);
   background: -moz-linear-gradient(top, #f2f6fa, #d6dde5);
   background: -o-linear-gradient(top, #f2f6fa, #d6dde5);
