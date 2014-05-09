@@ -66,4 +66,18 @@ $(document).ready(function() {
 
     }
 
+    bTourDateHeight = $('.b-tour__date').height() + 20;
+
+    $('<div></div>').addClass('b-tour__date__arrow').css({ 
+        border: (bTourDateHeight * 0.5) + 'px solid transparent',
+        borderLeft: '20px solid #fff',
+        left: 0
+    }).appendTo($('.b-tour__date'));
+
+    $('<div></div>').addClass('b-tour__date__arrow').css({ 
+        border: (bTourDateHeight * 0.5) + 'px solid transparent',
+        borderRight: '20px solid #fff',
+        right: 0
+    }).appendTo($('.b-tour__date'));
+
 });
