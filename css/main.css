@@ -133,7 +133,6 @@ button {
 .container {
   width: 980px;
   margin: 0 auto;
-  zoom: 1;
 }
 .container:before,
 .container:after {
@@ -168,50 +167,37 @@ button {
 }
 .btn--light {
   margin: 10px 0;
-  background: #36a7dc;
   background: -webkit-linear-gradient(top, #6dd2f3, #36a7dc);
-  background: -moz-linear-gradient(top, #6dd2f3, #36a7dc);
-  background: -o-linear-gradient(top, #6dd2f3, #36a7dc);
-  background: -ms-linear-gradient(top, #6dd2f3, #36a7dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#6dd2f3), to(#36a7dc));
   background: linear-gradient(to bottom, #6dd2f3, #36a7dc);
   font-size: 14px;
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px 3px #3588ac;
-  border-bottom: 2px solid #277fa8;
   -webkit-box-shadow: 0 2px 3px #c2c2c2;
   box-shadow: 0 2px 3px #c2c2c2;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
+  border-bottom: 2px solid #277fa8;
 }
 .btn--light:hover {
-  background: #52b7e6;
   background: -webkit-linear-gradient(top, #9ee1f7, #52b7e6);
-  background: -moz-linear-gradient(top, #9ee1f7, #52b7e6);
-  background: -o-linear-gradient(top, #9ee1f7, #52b7e6);
-  background: -ms-linear-gradient(top, #9ee1f7, #52b7e6);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9ee1f7), to(#52b7e6));
   background: linear-gradient(to bottom, #9ee1f7, #52b7e6);
 }
 .btn--light:not([disabled]):active {
+  background: -webkit-linear-gradient(top, #34a5db, #6bd1f2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#34a5db), to(#6bd1f2));
+  background: linear-gradient(to bottom, #34a5db, #6bd1f2);
   border-bottom: none;
   border-top: 2px solid #267ea8;
-  background: #34a5db;
-  background: -webkit-linear-gradient(top, #34a5db, #6bd1f2);
-  background: -moz-linear-gradient(top, #34a5db, #6bd1f2);
-  background: -o-linear-gradient(top, #34a5db, #6bd1f2);
-  background: -ms-linear-gradient(top, #34a5db, #6bd1f2);
-  background: linear-gradient(to bottom, #34a5db, #6bd1f2);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .btn--light[disabled] {
-  border-color: #b9bbc0;
-  background: #dfe0e6;
   background: -webkit-linear-gradient(top, #dfe0e6, #ced1d7);
-  background: -moz-linear-gradient(top, #dfe0e6, #ced1d7);
-  background: -o-linear-gradient(top, #dfe0e6, #ced1d7);
-  background: -ms-linear-gradient(top, #dfe0e6, #ced1d7);
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfe0e6), to(#ced1d7));
   background: linear-gradient(to bottom, #dfe0e6, #ced1d7);
+  border-color: #b9bbc0;
   -webkit-box-shadow: none;
   box-shadow: none;
   cursor: default;
@@ -236,7 +222,6 @@ button {
   font-size: 14px;
   outline: none;
   border: 1px solid #cfd9e6;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: inset 1px 1px 3px #dcdbdb;
   box-shadow: inset 1px 1px 3px #dcdbdb;
@@ -248,7 +233,6 @@ button {
 }
 .form__input--rounded {
   border-color: #8fbacf;
-  -webkit-border-radius: 90px;
   border-radius: 90px;
 }
 .form__textarea {
@@ -310,7 +294,6 @@ button {
 .image__border--small,
 .image__border--big {
   display: inline-block;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 5px #949494;
   box-shadow: 0 2px 5px #949494;
@@ -391,15 +374,12 @@ button {
   width: 100%;
   margin: 20px 0;
   border: 1px solid #cfd9e6;
-  border-collapse: separate;
-  -webkit-border-radius: 3px;
+  border-collapse: collapse;
   border-radius: 3px;
   font-size: 14px;
 }
 .table__tr--even td,
 .table--striped tr:nth-of-type(even) td {
-  border-top: 1px dotted #cfd9e6;
-  border-bottom: 1px dotted #cfd9e6;
   background: #f5f7fa;
 }
 .table th,
@@ -408,11 +388,13 @@ button {
 }
 .table thead th {
   background: -webkit-linear-gradient(top, #f2f6fa, #e4e8ee);
-  background: -moz-linear-gradient(top, #f2f6fa, #e4e8ee);
-  background: -o-linear-gradient(top, #f2f6fa, #e4e8ee);
-  background: -ms-linear-gradient(top, #f2f6fa, #e4e8ee);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f6fa), to(#e4e8ee));
   background: linear-gradient(to bottom, #f2f6fa, #e4e8ee);
   font-weight: bold;
+}
+.table tbody td {
+  border-top: 1px dotted #cfd9e6;
+  border-bottom: 1px dotted #cfd9e6;
 }
 .text {
   font-size: 14px;
@@ -473,7 +455,6 @@ button {
   color: #006fa7;
   font-size: 8px;
   border: 1px solid #006fa7;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -556,14 +537,13 @@ button {
 .b-exchange {
   background: #ebebeb;
   padding-bottom: 10px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: inset 0 0 5px #bebebe;
   box-shadow: inset 0 0 5px #bebebe;
 /* Заголовок
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Валюта, флаг, цена
-    --------------------------------------------- */
+        --------------------------------------------- */
 }
 .b-exchange__item {
   margin: 0 1px;
@@ -582,7 +562,6 @@ button {
   color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 5px #000;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 4px #9d9d9d;
   box-shadow: 0 1px 4px #9d9d9d;
@@ -613,21 +592,21 @@ button {
   color: #164e66;
   font-size: 12px;
 /* Колонка
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Заголовок
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Текст
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Кнопка
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Логотип
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Копирайт
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Соц. сети
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Меню
-    --------------------------------------------- */
+        --------------------------------------------- */
 }
 .b-footer__col {
   float: left;
@@ -668,10 +647,9 @@ button {
   margin-left: 15px;
 }
 .b-gallery {
-  zoom: 1;
   margin: 0 0 30px;
 /* Стилизация слайдера
-    ---------------------------------------------- */
+        ---------------------------------------------- */
 }
 .b-gallery:before,
 .b-gallery:after {
@@ -736,17 +714,17 @@ button {
   background: url("../img/b-header-bg.jpg") no-repeat center top;
   padding-bottom: 50px;
 /* Верхняя часть
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Основная часть
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Иконки, телефоны, профиль
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Телефоны
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Профиль
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Логотип, часы
-    --------------------------------------------- */
+        --------------------------------------------- */
 }
 .b-header__top {
   min-height: 76px;
@@ -980,14 +958,13 @@ button {
 .b-last-news {
   margin: 0 0 30px;
 /* Изображение, дата
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Ссылка
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Читать все новости
-    --------------------------------------------- */
+        --------------------------------------------- */
 }
 .b-last-news__items {
-  zoom: 1;
   margin: 0 0 20px;
 }
 .b-last-news__items:before,
@@ -1043,25 +1020,18 @@ button {
   -webkit-box-shadow: 0 0 6px #d6e1e7;
   box-shadow: 0 0 6px #d6e1e7;
   border: 1px solid #cfe5f0;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   position: relative;
 }
 a.b-list__item:hover {
-  background: #daf2fa;
   background: -webkit-linear-gradient(top, #effbff, #daf2fa);
-  background: -moz-linear-gradient(top, #effbff, #daf2fa);
-  background: -o-linear-gradient(top, #effbff, #daf2fa);
-  background: -ms-linear-gradient(top, #effbff, #daf2fa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#effbff), to(#daf2fa));
   background: linear-gradient(to bottom, #effbff, #daf2fa);
 }
 .b-list__item--active,
 a.b-list__item--active:hover {
-  background: #ddf3fa;
   background: -webkit-linear-gradient(top, #b4e3f2, #ddf3fa);
-  background: -moz-linear-gradient(top, #b4e3f2, #ddf3fa);
-  background: -o-linear-gradient(top, #b4e3f2, #ddf3fa);
-  background: -ms-linear-gradient(top, #b4e3f2, #ddf3fa);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b4e3f2), to(#ddf3fa));
   background: linear-gradient(to bottom, #b4e3f2, #ddf3fa);
   border: 1px solid #8bcae3;
   -webkit-box-shadow: 0 0 4px #8bcae3;
@@ -1088,10 +1058,7 @@ a.b-list__item--active:hover {
 .b-offers {
   margin: 0 0 30px;
 /* Заголовок 
-    -------------------------------------------- */
-}
-.b-offers__items {
-  zoom: 1;
+        -------------------------------------------- */
 }
 .b-offers__items:before,
 .b-offers__items:after {
@@ -1108,7 +1075,6 @@ a.b-list__item--active:hover {
   width: 220px;
   height: 170px;
   border: 5px solid #a0e2f7;
-  -webkit-border-radius: 7px;
   border-radius: 7px;
   -webkit-box-shadow: 0 0 7px #bfcace;
   box-shadow: 0 0 7px #bfcace;
@@ -1146,9 +1112,6 @@ a.b-list__item--active:hover {
 .b-other-offers {
   margin: 0 0 40px;
 }
-.b-other-offers__items {
-  zoom: 1;
-}
 .b-other-offers__items:before,
 .b-other-offers__items:after {
   content: "";
@@ -1177,13 +1140,13 @@ a.b-list__item--active:hover {
 .b-pagination {
   text-align: center;
 /* Назад 
-    ----------------------------------------------- */
+        ----------------------------------------------- */
 /* Вперед 
-    ----------------------------------------------- */
+        ----------------------------------------------- */
 /* Меньше 
-    ----------------------------------------------- */
+        ----------------------------------------------- */
 /* Больше 
-    ----------------------------------------------- */
+        ----------------------------------------------- */
 }
 .b-pagination__item {
   display: inline-block;
@@ -1321,7 +1284,6 @@ a.b-services-menu__sub__item--active:hover {
   -webkit-box-shadow: 0 0 8px #98b6c5;
   box-shadow: 0 0 8px #98b6c5;
   border: 1px solid #fff;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 .b-services-menu__link:before {
@@ -1338,7 +1300,6 @@ a.b-services-menu__sub__item--active:hover {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 .b-services-menu__link span {
@@ -1354,15 +1315,15 @@ a.b-services-menu__sub__item--active:hover {
   width: 250px;
   padding: 20px 10px 0;
 /* Блок
-    ---------------------------------------------- */
+        ---------------------------------------------- */
 }
 .b-sidebar__section {
   width: 230px;
   margin: 0 0 20px;
 /* Заголовок
-        ------------------------------------------ */
+            ------------------------------------------ */
 /* Кнопка
-        ------------------------------------------ */
+            ------------------------------------------ */
 }
 .b-sidebar__section__heading {
   display: block;
@@ -1397,13 +1358,13 @@ a.b-services-menu__sub__item--active:hover {
   color: #fff;
   text-shadow: 2px 2px 3px #6c6c6c;
 /* Описание
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Заголовок
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Список ссылок
-    --------------------------------------------- */
+        --------------------------------------------- */
 /* Стилизация слайдера
-    --------------------------------------------- */
+        --------------------------------------------- */
 }
 .b-slider__item {
   position: relative;
@@ -1461,7 +1422,6 @@ a.b-services-menu__sub__item--active:hover {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 5px #363636;
   box-shadow: 0 0 5px #363636;
@@ -1473,7 +1433,6 @@ a.b-services-menu__sub__item--active:hover {
   height: 50px;
   padding: 3px 10px 0;
   background: url("../img/b-top-menu-bg.png") repeat-x;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-shadow: 0 1px 5px #969696;
   box-shadow: 0 1px 5px #969696;
@@ -1490,15 +1449,11 @@ a.b-services-menu__sub__item--active:hover {
 .b-top-menu__item a {
   display: block;
   padding: 13px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 .b-top-menu__item a:hover {
-  background: #c0e1ef;
   background: -webkit-linear-gradient(top, #96cbe2, #c0e1ef);
-  background: -moz-linear-gradient(top, #96cbe2, #c0e1ef);
-  background: -o-linear-gradient(top, #96cbe2, #c0e1ef);
-  background: -ms-linear-gradient(top, #96cbe2, #c0e1ef);
+  background: -webkit-gradient(linear, left top, left bottom, from(#96cbe2), to(#c0e1ef));
   background: linear-gradient(to bottom, #96cbe2, #c0e1ef);
 }
 .b-top-menu__search {
@@ -1543,20 +1498,15 @@ a.b-services-menu__sub__item--active:hover {
   width: 86.7%;
   padding-left: 20px;
   border-left: none;
-  -webkit-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
 .b-tour__timetable__day {
   width: 13.3%;
-  background: #d6dde5;
   background: -webkit-linear-gradient(top, #f2f6fa, #d6dde5);
-  background: -moz-linear-gradient(top, #f2f6fa, #d6dde5);
-  background: -o-linear-gradient(top, #f2f6fa, #d6dde5);
-  background: -ms-linear-gradient(top, #f2f6fa, #d6dde5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f6fa), to(#d6dde5));
   background: linear-gradient(to bottom, #f2f6fa, #d6dde5);
   text-align: center;
   color: #046;
-  -webkit-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
 }
 .b-tour__timetable__day div {

@@ -1,0 +1,81 @@
+.btn--light {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+  -pie-background: linear-gradient(top, #9ee1f7, #36a7dc);
+}
+.btn--light:hover {
+  -pie-background: linear-gradient(top, #34a5db, #6bd1f2);
+}
+.btn--light:active {
+  -pie-background: linear-gradient(top, #34a5db, #6bd1f2);
+}
+.btn--light[disabled] {
+  -pie-background: linear-gradient(top, #dfe0e6, #ced1d7);
+}
+.form__input,
+.form__textarea,
+.form__input--rounded {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
+.table {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
+.table thead th {
+  behavior: url("PIE.htc");
+  -pie-background: linear-gradient(top, #f2f6fa, #e4e8ee);
+}
+.b-exchange__item,
+.b-exchange__heading {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
+.b-list__item {
+  behavior: url("PIE.htc");
+}
+a.b-list__item:hover {
+  -pie-background: linear-gradient(top, #effbff, #daf2fa);
+}
+.b-list__item--active,
+a.b-list__item--active:hover {
+  -pie-background: linear-gradient(top, #b4e3f2, #ddf3fa);
+}
+.b-offers__item {
+  behavior: url("PIE.htc");
+}
+.b-services-menu__link,
+.b-services-menu__link img {
+  behavior: url("PIE.htc");
+}
+.b-top-menu {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
+.b-top-menu__item a {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
+.b-top-menu__item a:hover {
+  -pie-background: linear-gradient(top, #96cbe2, #c0e1ef);
+}
+.b-tour__timetable {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
+.b-tour__timetable__day,
+.b-tour__timetable__desc {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
+.b-tour__timetable__day {
+  -pie-background: linear-gradient(top, #f2f6fa, #d6dde5);
+}
