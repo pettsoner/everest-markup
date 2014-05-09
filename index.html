@@ -421,10 +421,10 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <footer class="b-footer">
-        <div class="container">
+        <div class="container vcard">
 
             <div class="b-footer__col b-footer__logo">
-                <a href="#"><img alt="" src="img/logo.png"></a>
+                <a href="#" class="url"><img alt="" src="img/logo.png" class="photo"></a>
             </div><!-- /.b-footer__col.b-footer__logo -->
 
             <div class="b-footer__col">
@@ -449,9 +449,10 @@
             <div class="b-footer__col">
                 <div class="b-footer__heading">Контактные данные:</div>
 
-                <p class="b-footer__text">Адрес:  Российская Федерация, г. Москва, <br> пр. Свободны 11
+                <p class="b-footer__text">
+                    Адрес: <div class="country-name">Российская Федерация</div>, <span class="locality">г. Москва,</span><br><span class="street-address">пр. Свободны 11</span>
 
-                <p class="b-footer__text">Тел.: (479) 999 99 00<br>(479) 999 99 00</p>
+                <p class="b-footer__text">Тел.: <span class="tel">(479) 999 99 00</span><br><span class="tel">(479) 999 99 00</span></p>
 
                 <div class="b-footer__social">
                     <a href="#" class="b-icon--social-vk"></a>
@@ -466,7 +467,7 @@
 
                 <a href="#" class="btn btn--lg btn--light b-footer__btn">Написать сообщение</a>
 
-                <div class="b-footer__copyright">Copyright © 2014. Everest</div>
+                <div class="b-footer__copyright">Copyright © 2014. <div class="fn org">Everest</div></div>
             </div><!-- /.b-footer__col -->
            
         </div>

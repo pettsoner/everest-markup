@@ -52,6 +52,11 @@ a.b-list__item--active:hover {
 .b-services-menu__link img {
   behavior: url("PIE.htc");
 }
+.b-slider {
+  behavior: url("PIE.htc");
+  position: relative;
+  z-index: 0;
+}
 .b-top-menu {
   behavior: url("PIE.htc");
   position: relative;

@@ -799,7 +799,7 @@ button {
 }
 .b-header__logo,
 .b-header__clock {
-  width: 180px;
+  width: 170px;
 }
 .b-header__logo {
   float: left;
@@ -1349,14 +1349,18 @@ a.b-services-menu__sub__item--active:hover {
   margin-left: auto;
 }
 .b-slider {
-  margin: 0 10px 15px;
-  width: 600px;
-  height: 300px;
   float: left;
+  width: 602px;
+  height: 302px;
+  margin: 0 10px 15px;
   overflow: hidden;
   background: #fff;
   color: #fff;
   text-shadow: 2px 2px 3px #6c6c6c;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 6px #6e6e6e;
+  box-shadow: 0 0 6px #6e6e6e;
 /* Описание
         --------------------------------------------- */
 /* Заголовок
